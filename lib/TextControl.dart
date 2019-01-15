@@ -1,6 +1,34 @@
-// import 'package:flutter/material.dart';
-// import './Text.dart';
+ import 'package:flutter/material.dart';
+import './Text.dart';
 
+class TextControl extends StatefulWidget{
+  @override
+    State<StatefulWidget> createState() {
+      // TODO: implement createState
+      return _TextControl();
+    }
+}
+
+class _TextControl extends State<TextControl>{
+String _mainText = 'this is the first TEXT';
+
+  @override
+    Widget build(BuildContext context) {
+      // TODO: implement build
+      return Column(
+          children: [
+            RaisedButton(
+              onPressed: (){
+                setState(() {
+                  _mainText = 'New Text';
+                });
+              },
+              child: Text('Change the text below')),
+            TextOutput(_mainText)
+            ],
+        );
+    }
+}
 // class TextControl extends StatefulWidget{
 //   final String startingText;
 

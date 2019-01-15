@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-// import './TextControl.dart';
+import './TextControl.dart';
 // 1) Create a new Flutter App (in this project) and output an AppBar and some text
 // below it
 // 2) Add a button which changes the text (to any other text of your choice)
@@ -32,14 +32,7 @@ class _MyAppState extends State<MyApp>{
         appBar: AppBar(
           title: Text('Text Poster'),
         ),
-        body: Column(
-          children: [
-            RaisedButton(
-              onPressed: (){},
-              child: Text('change text')),
-            Text(_mainText)
-            ],
-        )
+        body: TextControl()
         // body: Center(
         //   child: Text('Text is shown'),
         //   ) 
