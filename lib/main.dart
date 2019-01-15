@@ -7,16 +7,16 @@ import './TextControl.dart';
 
 void main() => runApp(MyApp());
 
-class MyApp extends StatefulWidget {
-  @override
-    State<StatefulWidget> createState() {
-      // TODO: implement createState
-      return _MyAppState();
-    }
-}
+class MyApp extends StatelessWidget {
+//   @override
+//     State<StatefulWidget> createState() {
+//       // TODO: implement createState
+//       return _MyAppState();
+//     }
+// }
 
-class _MyAppState extends State<MyApp>{
-  String _mainText = 'this is the first text';
+// class _MyAppState extends State<MyApp>{
+  // String _mainText = 'this is the first text';
 
   @override
   Widget build(BuildContext context) {
