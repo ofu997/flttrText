@@ -1,7 +1,10 @@
  import 'package:flutter/material.dart';
-import './Text.dart';
+import './TextOutput.dart';
 
 class TextControl extends StatefulWidget{
+  // final String mainText;
+  // TextControl({this.mainText='first text from TextControl'});
+
   @override
     State<StatefulWidget> createState() {
       // TODO: implement createState
@@ -10,7 +13,7 @@ class TextControl extends StatefulWidget{
 }
 
 class _TextControl extends State<TextControl>{
-String _mainText = 'this is the first TEXT';
+String _mainText = 'Beginning Text'; // this is the first TEXT';
 
   @override
     Widget build(BuildContext context) {

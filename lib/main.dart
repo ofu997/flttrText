@@ -1,22 +1,16 @@
-import 'package:flutter/material.dart';
-import './TextControl.dart';
 // 1) Create a new Flutter App (in this project) and output an AppBar and some text
 // below it
 // 2) Add a button which changes the text (to any other text of your choice)
 // 3) Split the app into three widgets: App, TextControl & Textimport 'package:flutter/material.dart';
 
+import 'package:flutter/material.dart';
+import './TextControl.dart';
+
+
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
-//   @override
-//     State<StatefulWidget> createState() {
-//       // TODO: implement createState
-//       return _MyAppState();
-//     }
-// }
-
-// class _MyAppState extends State<MyApp>{
-  // String _mainText = 'this is the first text';
+   String _mainText = 'this is the first text from main.dart';
 
   @override
   Widget build(BuildContext context) {
